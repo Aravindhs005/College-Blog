@@ -1,0 +1,223 @@
+ *{
+	margin: 0;
+	padding: 0;	
+	font-family: montserrat;
+}
+.index{
+	width: 90%;
+	margin: auto;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/university.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	position: relative;
+}
+.navigation
+{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.navigation li{
+	display:inline-block;
+	margin: 10px;
+}
+.navigation li a{
+	color: #ffffff;
+	text-decoration: none;
+	padding: 20px 20px;
+	font-family: montserrat;
+	font-size: 19px;
+	/* border: 1px solid #fff; */
+}
+.navigation li a:hover{
+	background-color: #ffffff;
+	color: #000000	;
+}
+.logo1{
+	background-color: #ffffff;
+}
+.logo1 img{
+	width: 90px;
+	height: auto;
+	float: left;
+}
+.Home{
+	float: left;
+	position: absolute;
+	width: 35%;
+	height: 30%;
+	margin: 15% 8%;
+	text-align: center;
+}
+.Home1{
+	float: right;
+	position: absolute;
+	width: 35%;
+	height:auto;
+	margin: 12% 52%;
+	text-align: center;
+	overflow: hidden;
+	border:10px solid #C5CBE3;
+	border-radius: 8px;
+	box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.6);
+}
+.Home1 img{
+	max-width: 100%;
+	height:auto;
+}
+.wrapper{
+	width: 100%;
+	display: flex;
+	animation: slide 16s infinite;
+}
+.wrapper img{
+	width: 100%;
+}
+@keyframes slide{
+	0%{
+		transform: translateX(0);
+	}
+	20%{
+		transform: translateX(0);
+	}
+	30%{
+		transform: translateX(-100%);
+	}
+	40%{
+		transform: translateX(-100%);
+	}
+	50%{
+		transform: translateX(-200%);
+	}
+	60%{
+		transform: translateX(-200%);
+	}
+	70%{
+		transform: translateX(-300%);
+	}
+	80%{
+		transform: translateX(-300%);
+	}
+	90%{
+		transform: translateX(-400%);
+	}
+	100%{
+		transform: translateX(-400%);
+	}
+}
+.Home h1{
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 55px;
+	font-family: 'Stylish',sans-serif;
+	word-spacing: 10px;
+}
+.Home h2{
+	color: #ffffff;
+	text-align: center;
+	/* text-transform: uppercase; */
+	font-size: 50px;
+	font-family: 'Stylish',monospace;
+	letter-spacing: 5px;
+}
+.Home p{
+	color:#C5CBE3;
+	padding: 15px 0;
+	line-height: 1.9;
+	font-size: large;
+	font-family: 'Stylish',sans-serif;
+}
+.Home a{
+	border: 1px solid #ffffff;
+	padding: 10px 25px;
+	text-decoration: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-top: 20px;
+	display: inline-block;
+}
+.Home a:hover{
+	color: #ffffff;
+	background: #000000;
+
+}
+@media(max-width:800px){
+	.Home{
+		width: 100%;
+		margin: 20% 0;
+	} 
+	.Home1{
+		/* width: 94%;
+		margin: 41% 0; */
+		display: none;
+	} 
+	/* .Home1 img{
+		height:100%;
+
+	} */
+	.Home h1{
+		font-size: 20px;
+	}
+	.Home p{
+		width: 100%;
+	}
+	.index{
+		width: 100%;
+	}
+	.logo1{  
+		width: 100%;
+		text-align: center;
+		float: none;
+		display: block;
+	}
+	.navigation{
+		float: none;
+		width: 100%;
+		display: block;
+		margin-top: 0;
+		text-align: center;
+	}
+	.logo1 img{
+		float: none;
+	}
+} 
+.intro{
+	background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+	position: fixed;
+	z-index: 1; 	
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100vh;
+	transition: 3s;
+}
+.kec-logo{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color:linear-gradient(to right, #0f0c29, #302b63, #24243e);
+
+}
+.logo{
+	position:relative;
+	display: inline-block;
+	bottom: -100px;
+	opacity: 0;
+}
+.logo.active{
+	bottom: 0;
+	opacity: 1;
+	transition: ease-in-out 1s;
+}
+.logo.fade{
+	bottom: 100px;
+	opacity: 0;
+	transition: ease-in-out 1s;
+}
+/*  */
